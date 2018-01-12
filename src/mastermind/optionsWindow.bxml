@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Frame maximized="true"
+    styles="{padding:{top:4, left:4, bottom:4, right:4}, showWindowControls:false, backgroundColor:5}"
+    xmlns:bxml="http://pivot.apache.org/bxml"
+    xmlns="org.apache.pivot.wtk">
+         
+	<Border>
+    	<BoxPane orientation="vertical"
+            styles="{spacing:5, padding:10, fill:true}">
+            <Border>
+    			<BoxPane orientation="vertical"
+            		styles="{spacing:5, padding:10, backgroundColor:9}">
+    				<Label bxml:id="numColorsLabel"
+    					styles="{font:{bold:true}}"/>
+    					<Spinner bxml:id="numColorsSpinner"/>
+    			</BoxPane>
+    		</Border>
+            <Border>
+    			<BoxPane orientation="vertical"
+            		styles="{spacing:5, padding:10, backgroundColor:9}">
+    				<Label bxml:id="numHolesLabel"
+    					styles="{font:{bold:true}}"/>
+    					<Spinner bxml:id="numHolesSpinner"/>
+    			</BoxPane>
+    		</Border>
+            <Border>
+    			<BoxPane orientation="vertical"
+            		styles="{spacing:5, padding:10, backgroundColor:9}">
+        			<Label bxml:id="numGuessesLabel"
+        				styles="{font:{bold:true}}"/>
+    					<Spinner bxml:id="numGuessesSpinner"/>
+        		</BoxPane>
+    		</Border>
+            <Border>
+    			<BoxPane orientation="vertical"
+            		styles="{spacing:5, padding:10, backgroundColor:9}">
+        			<Label bxml:id="dupsAllowedLabel"
+        				styles="{font:{bold:true}}"/>
+    					<Checkbox bxml:id="dupsAllowedCheckbox"/>
+        		</BoxPane>
+    		</Border>
+            <Border>
+    			<BoxPane orientation="vertical"
+            		styles="{spacing:5, padding:10, backgroundColor:9}">
+        			<Label bxml:id="blanksAllowedLabel"
+        				styles="{font:{bold:true}}"/>
+    					<Checkbox bxml:id="blanksAllowedCheckbox"/>
+        		</BoxPane>
+    		</Border>
+    		<BoxPane orientation="vertical"
+            	styles="{spacing:5, padding:10}">
+        		<PushButton bxml:id="optionsDoneButton"
+      	        	styles="{backgroundColor:17, color:4}"/>
+        	</BoxPane>
+    	</BoxPane>
+    </Border>
+</Frame>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Frame maximized="true"
+    styles="{padding:{top:4, left:4, bottom:4, right:4}, showWindowControls:false, backgroundColor:5}"
+    xmlns:bxml="http://pivot.apache.org/bxml"
+    xmlns="org.apache.pivot.wtk">
+        
+    <!-- Lay out the window elements in a single column table pane. -->
+    <TablePane styles="{verticalSpacing:10, padding:10}">
+        <columns>
+            <TablePane.Column width="1*"/>
+        </columns>
+            
+        <!-- Action elements row. -->
+        <TablePane.Row height="2*">
+            <Border>
+                <BoxPane orientation="vertical"
+                    styles="{spacing:5, padding:10}">
+   	       			<Label bxml:id="actionLabel"
+      	        		styles="{font:{bold:true}, color:22,
+      	        		horizontalAlignment:'center', verticalAlignment:'center'}"/>
+                	<BoxPane bxml:id="buttonsBoxPane" orientation="horizontal"
+                    	styles="{spacing:5, verticalAlignment:'center'}">
+                	</BoxPane>
+                </BoxPane>
+            </Border>
+        </TablePane.Row>
+            
+        <!-- Puzzle row. -->
+        <TablePane.Row height="15*">
+            <ScrollPane horizontalScrollBarPolicy="fill_to_capacity" 
+            	verticalScrollBarPolicy="fill_to_capacity">
+               	<Border>
+               		<BoxPane orientation="vertical">
+                   		<TablePane bxml:id="puzzleTablePane"
+                   			styles="{verticalSpacing:10, padding:10}">
+           					<columns>
+               					<TablePane.Column width="4*"/>
+           					</columns>
+                   		</TablePane>
+                   	</BoxPane>
+               	</Border>
+            </ScrollPane>
+        </TablePane.Row>
+    </TablePane>
+</Frame>

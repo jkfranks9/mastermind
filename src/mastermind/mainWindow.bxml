@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Frame maximized="true"
+    styles="{padding:{top:4, left:4, bottom:4, right:4}, showWindowControls:false, backgroundColor:5}"
+    xmlns:bxml="http://pivot.apache.org/bxml"
+    xmlns="org.apache.pivot.wtk">
+            
+	<Border>
+        <BoxPane orientation="vertical"
+            styles="{spacing:20, padding:30, fill:true}">
+   	       	<Label bxml:id="titleLabel"
+      	        styles="{font:{bold:true, size:'300%'},
+       	    	horizontalAlignment:'center', verticalAlignment:'center'}"/>
+	        <PushButton bxml:id="gameOptionsButton"
+      	        styles="{font:{bold:true, size:'150%'}, backgroundColor:17, color:4}"/>
+	       	<PushButton bxml:id="newGameButton"
+      	        styles="{font:{bold:true, size:'150%'}, backgroundColor:17, color:4}"/>
+        </BoxPane>
+	</Border>
+</Frame>
